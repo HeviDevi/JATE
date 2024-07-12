@@ -10,8 +10,10 @@ To get JATE up and running, follow these steps:
 3. Once your files are bundled you can run `npm start`. Your application should now be running on `localhost:3000`.
 
 ## Usage
+While the app is running in browser you can input `ctrl + s` whenever you make a change to the text and it will persist when the page is refreshed.
 
-Simply hit the install button. As you type into the app your text will be saved locally when you hit `ctrl + s`
+However, if you simply hit the install button. As you type into the app your text will be saved locally automatically
+
 ## Credits
 
 This project was developed by Devon "HeviDevi" Ross using starter code provided by UCF & edX
