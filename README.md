@@ -22,3 +22,7 @@ However, if you simply hit the install button. As you type into the app your tex
 ## Credits
 
 This project was developed by Devon "HeviDevi" Ross using starter code provided by UCF & edX
+
+## Screenshot
+
+![](/client/src/images/JATE.png) 
