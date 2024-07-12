@@ -14,4 +14,4 @@ To get JATE up and running, follow these steps:
 Simply hit the install button. As you type into the app your text will be saved locally when you hit `ctrl + s`
 ## Credits
 
-This project was developed by Devon "HeviDevi" Ross using startede code provided by UCF & edX
+This project was developed by Devon "HeviDevi" Ross using starter code provided by UCF & edX
