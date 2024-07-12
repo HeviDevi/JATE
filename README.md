@@ -25,4 +25,4 @@ This project was developed by Devon "HeviDevi" Ross using starter code provided 
 
 ## Screenshot
 
-![](/client/src/images/JATE.png) 
+![](/Develop/client/src/images/JATE.png) 
