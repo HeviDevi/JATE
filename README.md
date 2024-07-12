@@ -6,7 +6,7 @@
 To get JATE up and running, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Navigate to the project directory (specifically the Develop folder) and input `npm run build`. 
+2. Navigate to the project directory (specifically the Develop folder) and input`npm i` followed by `npm run build`. 
 3. Once your files are bundled you can run `npm start`. Your application should now be running on `localhost:3000`.
 
 ## Usage
