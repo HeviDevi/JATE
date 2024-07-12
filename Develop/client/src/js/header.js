@@ -6,7 +6,7 @@ const header = `
 / /_/ / ___ |/ / / /___   
  ____/_/  |_/_/ /_____/   
 just another text editor
-*/
+
 
   W                          
    W   <|__<|       Hank the Donkey
@@ -17,6 +17,7 @@ just another text editor
              |||     |||  WW 
              |||     |||   
 __M____M____//,]____//,]_________M
+*/
 `;
 
 export { header };
