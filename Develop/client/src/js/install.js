@@ -1,45 +1,25 @@
-const buttonInstall = document.getElementById('buttonInstall');
+const butInstall = document.getElementById('buttonInstall');
 
 // Logic for installing the PWA
-
-// An event handler for the beforeinstallprompt event
-
+// Added an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
-  // Stores triggered events
-
-  window.deferredPrompt = event;
-  console.log('Before Install Prompt');
-
-  // Removes the hidden class
-
-  buttonInstall.classList.toggle('hidden', false);
+    event.preventDefault();
+    window.deferredPrompt = event;
+    butInstall.classList.toggle("hidden", false);
 });
 
-// A click event handler on the 'buttonInstall' element
+// Implemented a click event handler on the `butInstall` element
+butInstall.addEventListener('click', async () => {
+    const promptEvent = window.deferredPrompt;
+     if (!promptEvent) {
+      return;
+     }
+ promptEvent.prompt();
+ window.deferredPrompt = null;
+ butInstall.classList.toggle("hidden", true);
+  });
 
-buttonInstall.addEventListener('click', async () => {
-  const promptEvent = window.deferredPrompt;
-
-  if (!promptEvent) {
-    return;
-  }
-
-  // Shows prompt
-
-  prompt.Event.prompt();
-
-  // Resets the deferred prompt variable (can only be used once)
-
-  window.deferredPrompt = null;
-  buttonInstall.classList.toggle('hidden', true);
-});
-
-// Adds a handler for the 'appinstalled' event
-
-window.addEventListener('appinstalled', (event) => {
-  console.log('The app was successfully installed!');
-
-  // Clear prompt
-
-  window.deferredPrompt = null;
-});
+// Added an handler for the `appinstalled` event
+window.addEventListener('appinstalled', () => {
+    console.log('JATE has ben installed on your local device.');
+  });
